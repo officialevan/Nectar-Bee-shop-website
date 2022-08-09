@@ -349,7 +349,22 @@ form .btn2{
     }
     .about-col-2 p{
         font-size: 30px;
+    }   
+    .contact-left,
+
+    .contact-right{
+
+        flex-basis: 100%;
+
     }
+
+
+
+
+
+
+
+
     #testimonials .testimony-col-1 img{
         width: 75px;
         height: 75px;
