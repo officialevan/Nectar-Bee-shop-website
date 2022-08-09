@@ -89,7 +89,7 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 15%;
+    margin-top: 30%;
     font-size: 30px;
 }
 .header-text p{
@@ -108,6 +108,7 @@ nav ul li a:hover::after{
     align-items: center;
     padding-top: 20px;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 .cta a{
     padding: 10px 12px;
