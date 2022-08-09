@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/56c63cc6a8.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <title>Nectar</title>
+</head>
+<body>
+    <!------------------------------------------------Navigation------------------------------------------------------>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="assets/logo.png" alt="" class="logo" width="60px"></a>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#product">Our Products</a></li>
+                    <li><a href="#product">Our Shops</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>WELCOME TO OUR SITE</p>
+                <h1><span>Nectar's</span> honey is so sweet and natural, you'll be hooked!</h1>
+                <div class="cta">
+                    <a href="">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------About Us Section------------------------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/000026.jpg" alt="" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT US</h1>
+                    <p>Production of <span>Sweet Natural Honey</span> since 2022</p>
+                    <div class="cta">
+                        <a href="">Get Our Full History.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------Our Products Section---------------------------------------------->
+    <div id="product">
+        <div class="container">
+            <h2>OUR PRODUCTS</h2>
+            <p>Check out our bee shop for our top selling, newest products, and the sweetest of them all in the market.</p>
+                <div class="row">
+                    <div class="product-col">
+                        <img src="assets/natural.jpg" alt="" width="100%">
+                        <h3>PURE RAW HONEY</h3>
+                        <p>We recommend Pure Raw Honey if you want to spicen up your chicken recipe. The best.</p>
+                        <p>Ksh. 149<sup>99</sup></p>
+                        <div class="cta">
+                            <a href="">Add to cart.</a>
+                        </div>
+                    </div>
+        
+                    <div class="product-col">
+                        <img src="assets/wildflower.jpg" alt="" width="100%">
+                        <h3>WILDFLOWER HONEY</h3>
+                        <p>The bees just had to go wild to give us the wildflower honey. This is a surprise for you.</p>
+                        <p>Ksh. 149<sup>99</sup></p>
+                        <div class="cta">
+                            <a href="">Add to cart.</a>
+                        </div>
+                    </div>
+        
+                    <div class="product-col">
+                        <img src="assets/about-pic.jpg" alt="" width="100%">
+                        <h3>FOREST HONEY</h3>
+                        <p>The bees came through. They brought us the forest honey. You'll love it.</p>
+                        <p>Ksh. 149<sup>99</sup></p>
+                        <div class="cta">
+                            <a href="">Add to cart.</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+<!-----------------------------------------------Testimonials---------------------------------------------->
+<div id="testimonials">
+    <div class="container">
+        <div class="testimony-col-1">
+            <img src="assets/black.jpg" alt="">
+        </div>
+        <div class="testimony-col-2">
+            <p>The first time I tasted the Nectar forest honey, I knew that they are the one. The best in the country. I love the forest honey, I love Nectar. I highly recommend you to try it out.</p>
+            <h3>ANNA WAMBOI</h3>
+            <h4>Honey Lover</h4>
+        </div>
+    </div>
+</div>
+<!------------------contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <img src="assets/abstract-message-sent.gif" alt="">
+                <p> <i class="fas fa-paper-plane"></i> maildaviesevan@gmail.com</p>
+                <p> <i class="fas fa-phone-square-alt"></i> 0110159554</p>
+                <div class="social-icons">
+                    <a href=""> <i class="fab fa-twitter-square"></i> </a>
+                    <a href=""> <i class="fab fa-instagram"></i> </a>
+                    <a href=""> <i class="fab fa-linkedin"></i> </a>
+                    <a href=""> <i class="fab fa-facebook"></i> </a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                    <input type="text" id="firstname" name="Firstname" placeholder="Enter Your Firstname" required>
+                    <input type="text" id="surname" name="Surname" placeholder="Enter Your Surname" required>
+                    <textarea name="Message" id="message" placeholder="Enter Message..." cols="30" rows="10"></textarea>
+                    <button type="submit" class="btn btn2">Send Message</button>
+                    <span id="msg"></span>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+   
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw4oCKUuJYrhxq6shJjLU9IACxlZb8ALKUbJTy1kvfntney2zc7K3nZmFQA3Kla2JgU6g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>    
+</body>
+</html>
